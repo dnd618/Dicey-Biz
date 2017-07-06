@@ -12,13 +12,10 @@ display: inline-block;
 line-height: 50px;
 font-size: 20px;
 }*/
-body {
-    position: relative;
-}
 
 .dice {
-    height: 25px;
-    width: 32px;
+    height: 18px;
+    width: 18px;
     float: left;
     background-color: lightcoral;
     border: 1px solid black;
@@ -30,7 +27,7 @@ body {
 }
 
 body {
-    background-color: black;
+    background-color: aquamarine;
     position: relative;
 }
 
