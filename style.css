@@ -1,0 +1,43 @@
+/*.dice {
+height: 50px;
+width: 50px;
+border-radius: 10px;
+background-color: grey;
+text-align: center;
+font-weight: bold;
+font-family: sans-serif;
+color: white;
+margin: 10px;
+display: inline-block;
+line-height: 50px;
+font-size: 20px;
+}*/
+body {
+    position: relative;
+}
+
+.dice {
+    height: 25px;
+    width: 32px;
+    float: left;
+    background-color: lightcoral;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+body {
+    background-color: black;
+    position: relative;
+}
+
+/*.dice .dot {
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #000; 
+}*/
