@@ -1,11 +1,23 @@
 //Generate die 
-// function generateDie(toggle){
-//     document.getElementById(die).style.display = 'block';
-// }
+
+
 //Sum
 // function sum(toggle){
 //     document.getElementById(die).style.display = 'block';
 // }
+// document.addEventListener('DOMContentLoaded', function() {
+//     container = document.createElement('div');
+//     container.className = 'container';
+
+//     var button = document.createElement('button');
+//     onclick.generateDie = 'btn';
+//     button.innerText = 'Click Me';
+//     button.addEventListener('click', addSquare);
+
+//     document.body.appendChild(button);
+//     document.body.appendChild(container);
+// });
+//constructor function
 function Dice() {
   this.value = 0;
   this.kept = false;
@@ -34,3 +46,30 @@ function rollOnce() {
         '<button class="'+dice3.className()+'" onclick="dice3.keep(); this.className=dice3.className();">'+dice3.value+'</button> ';
 }
 rollOnce();
+// var dieRoll =Math.ceil(Math.random() * 6);
+// function Roll(dice) {
+//     this.dice = dieRoll;
+// }
+// dice.roll = function (expression) {
+//         var self = this,
+//             rolls = [];
+
+//         expression.toLowerCase().replace(/(\d+)(d\d+)?/g, function (_, count, die) {
+//             if (die) {
+//                 rolls = rolls.concat(self[die].times(+count));
+//             } else {
+//                 rolls.push(+count);
+//             }
+//         });
+
+//         return rolls.reduce(function (sum, roll) {
+//             return sum + roll;
+//         });
+//     };
+//     dice.d4 = makeDie(4);
+//     dice.d6 = makeDie(6);
+//     dice.d8 = makeDie(8);
+//     dice.d10 = makeDie(10);
+//     dice.d12 = makeDie(12);
+//     dice.d20 = makeDie(20);
+//     dice.d100 = makeDie(100);

@@ -1,2 +1,39 @@
-.kept { color: red; }
-#paragraph1 button + button { margin-left: 0.2em; }
+.kept { 
+    color: red; 
+    width: 4em;
+    height: 4em;
+    border-radius: 15px;
+    }
+#paragraph1 button + button { 
+    margin-left: 0.2em; 
+}
+.div .container .p .button {
+    height: 10em;
+    background-color: teal;
+    width: auto;
+}
+.generateDie {
+    display: hidden;
+}
+
+#paragraph1 button + button {
+    margin-left: 0.2em;
+    width: 4em;
+    height: 4em;
+    border-radius: 15px;
+}
+
+.container #paragraph1 button + button.keep   {
+        width: 4em;
+        height: 4em;
+        border-radius: 15px;
+    }
+
+.body {
+    background-color: black;
+}
+.p #paragraph1 {
+        width: 4em;
+        height: 4em;
+        border-radius: 15px;
+}
