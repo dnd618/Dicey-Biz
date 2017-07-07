@@ -1,7 +1,7 @@
 //Make DIV appear when btn clicked
-// function showDiv(toggle){
-// document.getElementById(toggle).style.display = 'block';
-// }
+function showDiv(toggle){
+document.getElementById(toggle).style.display = 'block';
+}
 //
 // function Thrower(dice){
 //   this.myDice = dice;
