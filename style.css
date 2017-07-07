@@ -38,4 +38,6 @@
         border-radius: 15px;
         background-color: pink;
         padding: 5px;
+        float: left;
+        border: 1px solid black;
 }

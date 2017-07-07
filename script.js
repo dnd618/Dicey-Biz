@@ -18,7 +18,7 @@
 //     document.body.appendChild(container);
 // });
 //constructor function
-function Dice() {
+function rollOnce() {
   this.value = 0;
   this.kept = false;
   this.className = function(){
@@ -38,11 +38,14 @@ function generateDie() {
     box.id = boxCount;
     boxCount++;  
     document.body.appendChild(box);
+    var dieRoll = Math.floor(Math.random()*6)+1;
+    box.innerText = dieRoll;
 }
 var boxCount = 0;
-var dice1 = new Dice();
-var dice2 = new Dice();
-var dice3 = new Dice();
+
+// var dice1 = new Dice();
+// var dice2 = new Dice();
+// var dice3 = new Dice();
 
 function rollOnce() { 
   dice1.roll();
