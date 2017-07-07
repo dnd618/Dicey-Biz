@@ -32,8 +32,10 @@
 .body {
     background-color: black;
 }
-.p #paragraph1 {
+.box {
         width: 4em;
         height: 4em;
         border-radius: 15px;
+        background-color: pink;
+        padding: 5px;
 }
