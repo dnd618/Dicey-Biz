@@ -9,12 +9,14 @@
 function Dice() {
   this.value = 0;
   this.kept = false;
+  this.className = function(){
+    return this.kept ? 'kept' : 'keep';
+  }
   this.roll = function() {
     if(!this.kept) this.value = Math.floor(Math.random()*6)+1;
-  };
-  this.keep = function(button) {
+  }
+  this.keep = function() {
     this.kept = true;
-    button.className = 'kept';
   }
 }
 
@@ -27,8 +29,8 @@ function rollOnce() {
   dice2.roll();
   dice3.roll();
   document.getElementById("paragraph1").innerHTML = 
-        '<button id="diceOne" class="'+(dice1.kept?'kept':'keep')+'" onclick="dice1.keep(this)">'+dice1.value+'</button> ' +
-        '<button id="diceTwo" class="'+(dice2.kept?'kept':'keep')+'" onclick="dice2.keep(this)">'+dice2.value+'</button> ' +
-        '<button id="diceThree" class="'+(dice3.kept?'kept':'keep')+'" onclick="dice3.keep(this)">'+dice3.value+'</button> ';
+        '<button class="'+dice1.className()+'" onclick="dice1.keep(); this.className=dice1.className();">'+dice1.value+'</button> ' +
+        '<button class="'+dice2.className()+'" onclick="dice2.keep(); this.className=dice2.className();">'+dice2.value+'</button> ' +
+        '<button class="'+dice3.className()+'" onclick="dice3.keep(); this.className=dice3.className();">'+dice3.value+'</button> ';
 }
 rollOnce();
