@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function(){
         sumButton.innerText = 'Add the Die!';
         sumButton.className = 'sumButton';
     document.body.appendChild(sumButton);
-    
+    //Generate random # on roll
     var Die = function() {    
        this.roll = function() {
            var result = Math.floor(Math.random()*6+1);
